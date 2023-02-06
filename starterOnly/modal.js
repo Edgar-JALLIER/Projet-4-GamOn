@@ -12,7 +12,7 @@ const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 
-// Ajout de la croix, du bouton d'inscription et du contenu du modal
+// Ajout de const : bouton d'inscription, la croix, du contenu du modal, bouton valider, formulaire
 const modalBtnOff = document.querySelector(".modal-btn");
 const modalClose = document.querySelector(".close");
 const modal = document.querySelector(".content");
@@ -138,10 +138,10 @@ btnSubmit.addEventListener("click", function (e) {
     const refreshPage = document.querySelector("#refresh");
     const refreshPageFermer = document.querySelector("#refresh-fermer");
     refreshPage.addEventListener("click", function () {
-      location.reload();
+      window.location.reload();
     });
     refreshPageFermer.addEventListener("click", function () {
-      location.reload();
+      window.location.reload();
     });
     //Création d'une message d'erreur si tous les champs ne sont pas valides
   } else {
